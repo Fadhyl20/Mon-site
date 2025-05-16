@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body bgcolor="aqua">
+    <div class="container">
+      <u><h1 style="text-align: center;color: black;">Enregistrement des Etdiants</h1></u>
+        <u><h2 style="text-align: center;color: black;">Formulaire D'inscription</h2></u>
+        <form method="post" action="traitement.php">
+          <fieldset class="etat civil">
+            <legend style="text-align: center;"></legend>
+             <div class="form-row">
+               <div class="form-group">
+            <p>
+        <label for="Nom" style="color: aliceblue;"> <u>Nom:</u> </label> <input type="text" name="nom" placeholder="votre nom.."/> <br><br>
+        <label for="Prénoms" style="color: aliceblue;"> <u>Prénoms:</u></label> <input type="text" name="prénoms" id="nom" placeholder="votre prénom.."/>
+        <label for="date de naissance" style="color: aliceblue;"> <u>Date de naissance:</u></label> <input style="text-align: left;" type="text" name="date de naissance" placeholder="00/00/0000.."/> <br><br>
+
+           <p>
+            </div>
+          </div>
+           <div class="form-row">
+              <div class="form-group">
+          <label for="sexe" style="color: aliceblue;" ><h3> <u>sexe:</u></label> <select id="sexe">
+            <option>Masculin</option>
+            <option>Féminin</option>
+            <option>Autre</option>
+          </select> <br><br>
+            </p>
+         </div>
+         <div class="form-row">
+            <div class="form-group">
+             <p>
+
+            <label for="Contact" style="color: aliceblue;"> <u>contact:</u></label> <input type="text" name="contact" id="contact" placeholder="contact...."/> <br><br>
+            <label for="mail" style="color: aliceblue;"><u> mail: </u></label> <input type="text" name="mail" id="mail" placeholder="e-mail@.com"/> <br><br>
+            
+             </p>
+          </div>
+        </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend style="text-align: center; color: aliceblue;"><h3><u>Les diplomes: </u></h3></legend>
+              <p>
+              <input type="checkbox" name="cep" id="cep"/>CEP</label> <br>
+              <input type="checkbox" name="bepc" id="bepc"/>BEPC </label> <br>
+              <input type="checkbox" name="BAC" id="bac"/>BAC </label> <br>
+              <input type="checkbox" name="BTS" id="Bts"/>BTS </label> <br>
+            </select> <br><br> </p>
+          </fieldset>
+            <p>
+            <h4 style="color: aliceblue;"><u>Votre adresse:</u></h4>
+            <textarea name="adresse" id=""></textarea> <br><br> </p>
+           <fieldset>
+            <legend style="text-align: center; color: aliceblue;"><h3> <u> Pays: </u></h3></legend>
+            
+                <input type="radio" id="Bénin" name="Bénin" value="Bénin" >
+                <label for="Bénin">Bénin</label> <br>
+                <input type="radio" id="Sénégal" name="Sénégal" value="Sénégal">
+                <label for="Sénégal">Sénégal</label>
+                <input type="radio" id="France" name="France" value="France" >
+                <label for="France">France</label>
+            </fieldset>
+            <fieldset class="buttons">
+              <legend style="text-align: center; color: aliceblue;"><h3><u>Boutons:</u></h3></legend>
+                <div class="button-group" style="text-align: center;">
+                   <button type="submit" onclick="alert('Formulaire envoyé!')">Envoyer</button>
+                   <button type="reset">Effacer</button>
+                   <button type="button" onclick="window.close()">Quitter</button>
+                </div>
+            </fieldset>
+          </div>
+          </form>
+   </body>
+</html>
